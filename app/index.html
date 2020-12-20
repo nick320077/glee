@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container-big">
+      <div class="container container--big">
         <div class="header__inner">
           <a class="logo" href="#">
             <img class="logo__img" src="images/header-logo.svg" alt="logo" />
@@ -16,64 +16,66 @@
 
           <nav class="menu">
             <ul class="menu__list">
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="#">Home +</a>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Home +</a>
               </li>
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="#">About</a>
+              <li class="menu__item">
+                <a class="menu__link" href="#">About</a>
               </li>
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="#">Services</a>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Services</a>
               </li>
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="#">Pages +</a>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Pages +</a>
               </li>
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="#">News</a>
+              <li class="menu__item">
+                <a class="menu__link" href="#">News</a>
               </li>
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="#">Contact</a>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Contact</a>
               </li>
             </ul>
           </nav>
 
           <div class="user-nav">
-            <div class="user-nav__search">
-              <a class="user-nav__link" href="#">
+            
+              <a class="user-nav__link user-nav__search" href="#">
                 <img
                   class="user-nav__link-img"
-                  src="images/icons/search.svg"
+                  src="images/icons/search-svg.svg"
                   alt=""
                 />
               </a>
-            </div>
-            <div class="user-nav__link-box">
-              <a class="user-nav__link" href="#">
+            
+            
+              <a class="user-nav__link user-nav__like" href="#">
                 <img
                   class="user-nav__link-img"
                   src="images/icons/like.svg"
                   alt=""
                 />
-                <span class="user-nav__num">0</span>
+                <span class="user-nav__num user-nav__num-like">0</span>
               </a>
-              <a class="user-nav__link" href="#">
+             
+             
+              <a class="user-nav__link user-nav__cart" href="#">
                 <img
                   class="user-nav__link-img"
                   src="images/icons/cart.svg"
                   alt=""
                 />
-                <span class="user-nav__num">0</span>
+                <span class="user-nav__num user-nav__num-cart">0</span>
               </a>
-            </div>
-            <div class="user-nav__search-block">
-              <a class="user-nav__link" href="#">
+            
+            
+              <a class="user-nav__link user-nav__menu" href="#">
                 <img
                   class="user-nav__link-img"
                   src="images/icons/btn.png"
                   alt=""
                 />
               </a>
-            </div>
+            
           </div>
         </div>
       </div>
@@ -81,14 +83,15 @@
 
     <main class="main">
     <section class="top-slider">
-      <div class="container-big container-big__slider">
-        <div class="container top-slider__container">
+      <div class="container--big">
+        <div class="top-slider__box">
+        <div class="container container--middle">
           <div class="top-slider__inner">
             <div class="top-slider__item">
               <div class="top-slider__content">
-                <h3 class="top-slider__title">
-                  SMART AND TRENDY
-                </h3>
+                <div class="top-slider__title">
+                  Smart and trendy
+                </div>
                 <p class="top-slider__text">
                   Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
                 </p>
@@ -98,9 +101,9 @@
             </div>
             <div class="top-slider__item">
               <div class="top-slider__content">
-                <h3 class="top-slider__title">
-                  SMART AND TRENDY
-                </h3>
+                <div class="top-slider__title">
+                  Smart and trendy
+                </div>
                 <p class="top-slider__text">
                   Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
                 </p>
@@ -111,9 +114,9 @@
             </div>
             <div class="top-slider__item">
               <div class="top-slider__content">
-                <h3 class="top-slider__title">
-                  SMART AND TRENDY
-                </h3>
+                <div class="top-slider__title">
+                  Smart and trendy
+                </div>
                 <p class="top-slider__text">
                   Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
                 </p>
@@ -126,32 +129,25 @@
         </div>
       </div>
       <div class="top-slider__servises">
-        <div class="container-big">
         <div class="top-slider__servises-inner">
-        <div class="top-slider__servises-item">
-          <div class="top-slider__servises-support">
-          <h4 class="top-slider__servises-title">Support 24/7.</h4>
+        <div class="top-slider__servises-item top-slider__servises-item--support">
+          <div class="top-slider__servises-title">Support 24/7.</div>
           <p class="top-slider__servises-text">Contact us 24 hours a day,
             7 days a week.</p>
         </div>
-      </div>
-        <div class="top-slider__servises-item services-delivery">
-          <div class="top-slider__servises-delivery">
-          <h4 class="top-slider__servises-title">Delivery.</h4>
+         <div class="top-slider__servises-item top-slider__servises-item--delivery">
+          <div class="top-slider__servises-title">Delivery.</div>
           <p class="top-slider__servises-text">Free shipping on all US order.</p>
         </div>
-      </div>
-        <div class="top-slider__servises-item">
-          <div class="top-slider__servises-payment">
-          <h4 class="top-slider__servises-title">100% Payment secure.</h4>
+         <div class="top-slider__servises-item top-slider__servises-item--payment">
+          <div class="top-slider__servises-title">100% Payment secure.</div>
           <p class="top-slider__servises-text">We ensure secure payment
             with PEV.</p>
         </div>
        </div>
       </div>
     </div>
-  </div>
-    </section>
+  </section>
                                     
 
     <section class="product">
@@ -159,12 +155,11 @@
         <div class="product__inner">
         <h3 class="product__title">Products of the week</h3>
         <div class="product__box">
-                                         
-       <button class="product__button" data-filter="all">All</button>
-       <button class="product__button" data-filter=".category-a">Furnitures </button>
-       <button class="product__button" data-filter=".category-b">Chairs</button>
-       <button class="product__button" data-filter=".category-c">Lighting</button>
-       <button class="product__button" data-filter=".category-a">Decor</button>
+       <button class="product__button" type="button" data-filter="all">All</button>
+       <button class="product__button" type="button" data-filter=".category-a">Furnitures </button>
+       <button class="product__button" type="button" data-filter=".category-b">Chairs</button>
+       <button class="product__button" type="button" data-filter=".category-c">Lighting</button>
+       <button class="product__button" type="button" data-filter=".category-d">Decor</button>
       </div>
         <div class="product__items">
           <div class="product-item mix category-c">
@@ -357,7 +352,7 @@
             </div>
 
           </div>
-          <div class="product-item mix category-a">
+          <div class="product-item mix category-d">
             <div class="product-item__img-box">
               <img class="product-item__img" src="images/product/6.png" alt="product" >
               <div class="product-item__link-box">
@@ -469,12 +464,180 @@
               <h4 class="product-item__title">Wooden radio</h4>
               <div class="product-item__price">$29.00</div>
             </div>
+           </div>
+          </div>
+        </div>
+       </div>
 
+      <div class="product-special">
+        <div class="container--big">
+         <div class="product-special__items">
+           <div class="product-special__item">
+             <img class="product-special__item-img"src="images/special-1.png" alt="special image">
+            <div class="product-special__item-content">
+             <div class="product-special__item-title">Mirum Notare Tellus</div>
+             <div class="product-special__item-descr product-special__item-descr--left">LEDCornBulb Lamp 5W 7W 10W 12W 15W E26 E27LEDCornLight</div>
+             <a class="product-special__item-link">View More</a>
+           </div>
+          </div>
+
+           <div class="product-special__item product-special__item--right">
+            <img class="product-special__item-img product-special__item-img--second"src="images/special-2.png" alt="special image">
+             <div class="product-special__item-content product-special__item-content--right">
+            <div class="product-special__item-title product-special__item-title--right">Malesuada Tempor 
+              Euismod</div>
+            <div class="product-special__item-descr">50W 8000lm Compact Size for HID StreetLightReplacementLEDCornLight</div>
+            <a class="product-special__item-link">View More</a>
+          </div>
+         </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="product-new">
+        <div class="container">
+          <div class="product-new__title">New Design</div>
+          <div class="product-new__box">
+            <button class="product-new__button" type="button" data-filter="all">All</button>
+            <button class="product-new__button" type="button" data-filter=".category-a">Furnitures </button>
+            <button class="product-new__button" type="button" data-filter=".category-b">Chairs</button>
+            <button class="product-new__button" type="button" data-filter=".category-c">Lighting</button>
+            <button class="product-new__button" type="button" data-filter=".category-d">Decor</button>
+           </div>
+           <div class="product-new__items">
+             <div class="product-new__item mix category-d">
+              <div class="product-new__item-content">
+               <div class="product-new__item-title">Beat Flat Pendant 
+                Black</div>
+               <span class="product-new__item-descr">Classic</span>
+              </div>
+               <img class="product-new__item-img" src="images/product/product-new-1.png" alt="">
+             </div>
+
+             <div class="product-new__item mix category-a">
+              <div class="product-new__item-content">
+               <div class="product-new__item-title">Lampe Sur Pieds 
+                Bamboo</div>
+               <span class="product-new__item-descr">Classic</span>
+              </div>
+               <img class="product-new__item-img" src="images/product/product-new-2.png" alt="">
+             </div>
+
+             <div class="product-new__item mix category-a">
+               <div class="product-new__item-content">
+               <div class="product-new__item-title">Rattan Rocking
+                Chair</div>
+               <span class="product-new__item-descr">Classic</span>
+              </div>
+               <img class="product-new__item-img" src="images/product/prod-new3.png" alt="">
+             </div>
+            
+             <div class="product-new__item mix category-b">
+               <div class="product-new__item-content">
+               <div class="product-new__item-title">Rattan Rocking
+                Chair</div>
+               <span class="product-new__item-descr">Classic</span>
+              </div>
+               <img class="product-new__item-img" src="images/product/product-new-4.png" alt="">
+             </div>
+            
+             <div class="product-new__item mix category-c">
+               <div class="product-new__item-content">
+               <div class="product-new__item-title">Rattan Rocking
+                Chair</div>
+               <span class="product-new__item-descr">Classic</span>
+              </div>
+               <img class="product-new__item-img" src="images/product/prod-new5.png"alt="">
+             </div>
+            
+             
+             <div class="product-new__item mix category-d">
+               <div class="product-new__item-content">
+               <div class="product-new__item-title">Lampe Sur Pieds 
+                Bamboo</div>
+               <span class="product-new__item-descr">Classic</span>
+              </div>
+               <img class="product-new__item-img" src="images/product/product-new-6.png" alt="">
+             </div>
+           
+          </div>
+        </div>
+      </div>
+      
+      <div class="product-video " style="background-image: url(images/video-bg.png)">
+       <a data-fancybox class="product-video__link"  href="https://youtu.be/jkaBprg3stk"></a>
+       </div>
+      </section>
+
+
+       <section class="insights">
+        <div class="container">
+         <div class="insights__inner">
+          <div class="insights__box">
+           <div class="insights__title">Our Insights & Articles</div>
+           <a class="insights__link" href="#">View All</a>
+           </div>
+           <div class="insights__items">
+             
+            <div class="insights__item">
+              <a class="insights__item-link" href="#" >
+                <img class="insights__item-img" src="images/item-img1.png" alt="" >
+              </a>
+              <div class="insights__item-box">
+              <div href="" class="insights__item-content">
+                <a href="" class="insights__item-news">News</a>
+                <a href="" class="insights__item-title">Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</a>
+              </div>
+              <div class="insights__item-details">
+                <span class="insights__item-date">  28 JANUARY, 2020</span>
+                <a href="" class="insights__item-author">  BY ADMIN</a>
+              </div>
+            </div>
+            </div>
+
+             <div class="insights__item">
+              <a class="insights__item-link" href="#" >
+                <img class="insights__item-img" src="images/item-img2.png" alt="" >
+              </a>
+              <div class="insights__item-box">
+                <div href="" class="insights__item-content">
+                  <a href="" class="insights__item-news">News</a>
+                  <a href="" class="insights__item-title">Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</a>
+                </div>
+                <div class="insights__item-details">
+                  <span class="insights__item-date">  28 JANUARY, 2020</span>
+                  <a href="" class="insights__item-author">  BY ADMIN</a>
+                </div>
+            </div>
+          </div>
+            <div class="insights__item">
+              <a class="insights__item-link" href="#" >
+                <img class="insights__item-img" src="images/item-img3.png" alt="" >
+              </a>
+              <div class="insights__item-box">
+                <div href="" class="insights__item-content">
+                  <a href="" class="insights__item-news">News</a>
+                  <a href="" class="insights__item-title">Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</a>
+                </div>
+                <div class="insights__item-details">
+                  <span class="insights__item-date">  28 JANUARY, 2020</span>
+                  <a href="" class="insights__item-author">  BY ADMIN</a>
+                </div>
+            </div>
+          </div>
+        </div>
+          <div class="insights__partner">
+            <img class="insights__partner-img" src="images/partner-1.png" alt="brand image" >
+            <img class="insights__partner-img" src="images/partner-2.png" alt="brand image" >
+            <img class="insights__partner-img" src="images/partner-3.png" alt="brand image" >
+            <img class="insights__partner-img" src="images/partner-4.png" alt="brand image" >
+            <img class="insights__partner-img" src="images/partner-5.png" alt="brand image" >
           </div>
           </div>
         </div>
       </div>
-    </section>
+
+      </section>
 
 
     </main>
@@ -487,25 +650,27 @@
               <a class="logo" href="#">
                 <img class="footer-logo__img" src="images/header-logo.svg" alt="logo" />
               </a>
-              <ul class="footer-top__contacts-list">
-                <li class="footer-top__contacts-item">
+              <address class="footer-top__address">
+              <div class="footer-top__contacts-list">
+                <div class="footer-top__contacts-item">
                   <a class="footer-top__contacts-link" href=""
                 >ADDRESS: 4772 Wines Lane Houston, TX 77032</a>
-                </li>
-                <li class="footer-top__contacts-item">
+                </div>
+                <div class="footer-top__contacts-item">
                   <a class="footer-top__contacts-link" href="tel:+8323475843"
                 >TELEPHONE: +832-347-5843</a>
-                </li>
-                <li class="footer-top__contacts-item">
+                </div>
+                <div class="footer-top__contacts-item">
                   <a class="footer-top__contacts-link" href="mailto:contact@Glee.com">EMAIL: contact@Glee.com</a>
-                </li>
-              </ul>
+                </div>
+              </div>
+            </address>
             </div>
           </div>
 
           <div class="footer-top__item-servises">
             <h3 class="footer-top__item-title">Services</h3>
-            <ul class="footer-top__item-servises">
+            <ul class="footer-top__item-list">
               <li class="footer-top__servise">
                 <a class="footer-top__link" href="#">About us</a>
               </li>
@@ -528,17 +693,17 @@
           <div class="footer-top__item-account">
             <h3 class="footer-top__item-title">Account
               </h3>
-              <ul class="footer-top__item-account">
-                <li class="footer-top__account">
+              <ul class="footer-top__item-list">
+                <li class="footer-top__servise">
                   <a class="footer-top__link" href="#">Your Account</a>
                 </li>
-                <li class="footer-top__account">
+                <li class="footer-top__servise">
                   <a class="footer-top__link" href="#">Checkout</a>
                 </li>
-                <li class="footer-top__account">
+                <li class="footer-top__servise">
                   <a class="footer-top__link" href="#">Login</a>
                 </li>
-                <li class="footer-top__account">
+                <li class="footer-top__servise">
                   <a class="footer-top__link" href="#">Register</a>
                 </li>
             </div>
@@ -548,6 +713,7 @@
             <p class="footer-top__item-text">Subscribe by our newsletter and get
               update protidin.</p>
               <form class="footer-top__item-form" action="#">
+                <label class="footer-top__label"></label>
                 <input class="footer-top__item-input "type="email" name="email" placeholder="Email address">
                 <button class="footer-top__item-button">Subscribe</button>
               </form>
