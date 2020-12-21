@@ -21,6 +21,11 @@ $default: #7b7b7b;
   font-weight: 700;
 }
 
+%rubik-300 {
+  font-family: "Rubik-Light", sans-serif;
+  font-weight: 300;
+}
+
 %rubik-400 {
   font-family: "Rubik-Regular", sans-serif;
   font-weight: 400;
@@ -87,4 +92,11 @@ $default: #7b7b7b;
     justify-content: center;
     margin-bottom: 66px;
   }
+}
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
 }

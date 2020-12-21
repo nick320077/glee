@@ -739,4 +739,138 @@
   }
 }
 
+.top {
+  &__inner {
+    background-color: #edf1f4;
+    padding: 30px 0 30px;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 36px;
+    @extend %rubik-300;
+    color: #222933;
+    margin-bottom: 10px;
+  }
+}
+.breadcrumbs {
+  display: flex;
+  justify-content: center;
+  &__item {
+    padding: 0 10px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "/";
+      left: 55px;
+      top: 1px;
+      font-size: 18px;
+    }
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    @extend %rubik-400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #737980;
+  }
+
+  &__list {
+    display: flex;
+  }
+}
+
+.login {
+  padding: 117px 0 0;
+
+  &__inner {
+    max-width: 470px;
+    margin: 0 auto;
+  }
+
+  &__label {
+    @extend %rubik-400;
+    font-size: 14px;
+    margin-bottom: 25px;
+    display: block;
+    color: #436372;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    border: 1px solid #f6f6f6;
+    height: 60px;
+    margin-top: 12px;
+    padding: 0 15px;
+  }
+
+  &__button {
+    display: block;
+    width: 100%;
+    background-color: $accent;
+    font-size: 18px;
+    @extend %rubik-500;
+    color: #fff;
+    padding: 20px 0;
+    border: none;
+    margin-top: 40px;
+    margin-bottom: 35px;
+  }
+
+  &__link-password {
+    @extend %rubik-400;
+    font-size: 14px;
+    color: #436372;
+    margin-left: 214px;
+  }
+
+  &__register {
+    border-top: 1px solid #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__register-link {
+    padding: 30px 0 25px;
+    @extend %rubik-400;
+    font-size: 14px;
+    color: #436372;
+  }
+
+  &__register-createlink {
+    @extend %rubik-500;
+    font-size: 18px;
+    color: #243f4d;
+    border: 2px solid $accent;
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 117px;
+  }
+
+  &__partner {
+    background-color: $latte;
+  }
+
+  &__partner-inner {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 75px 0 90px;
+  }
+
+  &__partner-img {
+    object-fit: contain;
+  }
+}
+
 @import "media";
