@@ -869,14 +869,17 @@
   }
 }
 
-.shop {
+.shop,
+.shop-page {
   &__inner {
     display: flex;
+    padding: 120px 0 0;
   }
 
   &__filters {
     margin-right: 30px;
-    width: 270px;
+    max-width: 275px;
+    width: 100%;
   }
 
   &__category,
@@ -970,11 +973,28 @@
     }
   }
 
+  &__category-input {
+    @extend %checkbox-hidden;
+    &:checked + .shop-page__category-checkbox {
+      background-color: #edf1f4;
+    }
+  }
+
   &__brand-input {
     @extend %checkbox-hidden;
     &:checked + .shop__category-checkbox {
       background-color: #edf1f4;
       .shop__brand-number {
+        color: $accent-darkest;
+      }
+    }
+  }
+
+  &__brand-input {
+    @extend %checkbox-hidden;
+    &:checked + .shop-page__category-checkbox {
+      background-color: #edf1f4;
+      .shop-page__brand-number {
         color: $accent-darkest;
       }
     }
@@ -1046,11 +1066,86 @@
     color: #d6d6d6;
   }
 
-  padding: 120px 0 0;
   &__items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 45px 30px;
+  }
+  //shop-page
+  &__product {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  &__image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #f2f2f2;
+    height: 500px;
+    max-width: 370px;
+    width: 100%;
+    margin-right: 55px;
+  }
+
+  &__product-features {
+    padding-top: 80px;
+  }
+
+  &__product-title {
+    @extend %rubik-400;
+    font-size: 40px;
+    color: #333333;
+    margin-bottom: 20px;
+  }
+
+  &__product-rate {
+    margin-bottom: 20px;
+  }
+
+  &__product-price {
+    @extend %rubik-400;
+    font-size: 30px;
+    line-height: 45px;
+    color: #333333;
+    margin-bottom: 20px;
+  }
+
+  &__product-descr {
+    @extend %rubik-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: $accent-darkest;
+    margin-bottom: 50px;
+  }
+
+  &__product-link {
+    padding: 21px 16px 14px;
+    background-color: #fff;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    transition: 0.3s;
+    &:hover {
+      background-color: $accent;
+      path {
+        fill: #fff;
+      }
+    }
+  }
+
+  &__product-link--btn {
+    @extend %rubik-400;
+    font-size: 15px;
+    line-height: 30px;
+    color: #fff;
+    background-color: $accent;
+    padding: 15px 51px;
+    border-radius: 5px;
+  }
+
+  &__product-link--cart {
+    margin-right: 10px;
+    padding: 21px 14px 14px;
+    background-color: #fff;
   }
 
   &-item {
@@ -1161,6 +1256,11 @@
     color: $accent-darkest;
     padding: 10px 20px;
     border: 1px solid $accent;
+  }
+
+  &--shop-page {
+    padding: 35px 0 120px;
+    justify-content: start;
   }
 }
 
