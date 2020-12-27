@@ -94,6 +94,39 @@ $default: #7b7b7b;
   }
 }
 
+%product-title {
+  @extend %rubik-400;
+  font-size: 40px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+%product-price {
+  @extend %rubik-400;
+  font-size: 30px;
+  line-height: 45px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+%product-descr {
+  @extend %rubik-400;
+  font-size: 16px;
+  line-height: 30px;
+  color: $accent-darkest;
+  margin-bottom: 50px;
+}
+
+%product-btn {
+  @extend %rubik-400;
+  font-size: 15px;
+  line-height: 30px;
+  color: #fff;
+  background-color: $accent;
+  padding: 15px 51px;
+  border-radius: 5px;
+}
+
 %checkbox-hidden {
   width: 1px;
   height: 1px;
