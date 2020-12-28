@@ -1621,4 +1621,268 @@
   }
 }
 
+.about {
+  padding: 120px 0 120px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__image {
+    width: 570px;
+    height: 680px;
+    margin-right: 50px;
+  }
+
+  &__img {
+    width: 570px;
+    height: 680px;
+  }
+
+  &__content {
+    padding: 60px 0 60px;
+    max-width: 560px;
+    width: 100%;
+  }
+
+  &__experience {
+    display: flex;
+    align-items: center;
+  }
+
+  &__years {
+    @extend %rubik-700;
+    font-size: 140px;
+    color: $accent;
+    margin-right: 30px;
+  }
+
+  &__description {
+    @extend %rubik-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: $accent-darkest;
+    max-width: 120px;
+  }
+
+  &__mission-title {
+    @extend %dmsans-700;
+    font-size: 36px;
+    color: $accent-darkest;
+    margin-bottom: 40px;
+  }
+
+  &__mission-description {
+    @extend %rubik-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: $accent-darkest;
+    padding-bottom: 70px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url(../images/icons/border-top.svg);
+      width: 500px;
+      height: 3px;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  &__achievements {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    max-width: 528px;
+    width: 100%;
+  }
+
+  &__item {
+    padding-left: 58px;
+    position: relative;
+  }
+
+  &__item--projects {
+    position: relative;
+    &::after {
+      content: "";
+      background-image: url(../images/icons/stick-about.svg);
+      height: 80px;
+      width: 1px;
+      position: absolute;
+      color: #e6eaf0;
+      font-size: 80px;
+      right: -29px;
+      top: -4px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url(../images/icons/item-before.svg);
+      background-repeat: no-repeat;
+      width: 45px;
+      height: 45px;
+      left: 0;
+      top: 10px;
+    }
+  }
+
+  &__item--revenue {
+    position: relative;
+    &::after {
+      content: "";
+      background-image: url(../images/icons/stick-about.svg);
+      height: 80px;
+      width: 1px;
+      position: absolute;
+      color: #e6eaf0;
+      font-size: 80px;
+      right: -29px;
+      top: -4px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url(../images/icons/item-before-2.svg);
+      background-repeat: no-repeat;
+      width: 45px;
+      height: 45px;
+      left: 0;
+      top: 10px;
+    }
+  }
+
+  &__item--awards {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url(../images/icons/item-before-3.svg);
+      background-repeat: no-repeat;
+      width: 45px;
+      height: 45px;
+      left: 0;
+      top: 10px;
+    }
+  }
+
+  &__number {
+    @extend %dmsans-700;
+    font-size: 36px;
+    line-height: 38px;
+    color: $accent-darkest;
+  }
+
+  &__descr {
+    @extend %dmsans-700;
+    font-size: 16px;
+    line-height: 17px;
+    color: #4c4c4c;
+  }
+}
+
+.about-benefits {
+  margin: 100px 0 120px;
+  background-image: url(../images/benefit-bg.png);
+  background-repeat: no-repeat;
+  min-height: 320px;
+}
+
+.about-team {
+  &__inner {
+    display: flex;
+    margin-bottom: 420px;
+  }
+
+  &__content {
+    max-width: 320px;
+    width: 100%;
+    margin-right: 90px;
+  }
+
+  &__member_img {
+    width: 372px;
+    height: 322px;
+  }
+
+  &__member_inner {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 20px 28px 23px;
+    max-width: 330px;
+    margin-top: -50px;
+    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+    overflow: overlay;
+  }
+
+  &__member_social {
+    display: flex;
+  }
+
+  &__member_name {
+    @extend %dmsans-700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #436372;
+    margin-bottom: 5px;
+  }
+
+  &__member_position {
+    @extend %rubik-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #565872;
+  }
+
+  &__title {
+    @extend %dmsans-700;
+    font-size: 36px;
+    color: $accent-darkest;
+    margin-bottom: 30px;
+  }
+  &__descr {
+    @extend %rubik-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: $accent-darkest;
+    margin-bottom: 36px;
+  }
+
+  &__member_link {
+    margin-left: 7px;
+  }
+
+  &__link {
+    @extend %rubik-400;
+    font-size: 15px;
+    line-height: 55px;
+    color: #fff;
+    padding: 14px 60px 14px 18px;
+    background-color: $accent;
+    border-radius: 5px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url(../images/icons/team-btn-arrow.svg);
+      background-repeat: no-repeat;
+      width: 17px;
+      height: 14px;
+      top: 17px;
+      right: 17px;
+    }
+  }
+
+  &__members {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 40px;
+  }
+}
+
 @import "media";
