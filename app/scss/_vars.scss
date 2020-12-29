@@ -135,6 +135,24 @@ $default: #7b7b7b;
   position: absolute;
 }
 
+%category-title {
+  @extend %dmsans-700;
+  font-size: 18px;
+  color: $accent-darkest;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 27px;
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url(../images/icons/category-line.svg);
+    width: 40px;
+    height: 3px;
+    left: 110px;
+    top: 10px;
+  }
+}
+
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});
 }
