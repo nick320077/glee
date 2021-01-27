@@ -733,7 +733,11 @@
   }
 
   &__partner--related {
-    padding: 80px 0 0px;
+    padding: 90px 0 0px;
+  }
+
+  &__partner--related {
+    padding: 90px 0 80px;
   }
 
   &__partner-img {
@@ -2425,6 +2429,193 @@
     font-size: 16px;
     line-height: 26px;
     color: #999999;
+  }
+}
+
+.contact {
+  padding: 118px 0 370px;
+  &__subtitle {
+    @extend %poppins-700;
+    font-size: 16px;
+    line-height: 20px;
+    color: $accent;
+    text-align: center;
+  }
+
+  &__title {
+    @extend %dmsans-700;
+    font-size: 35px;
+    line-height: 57px;
+    color: $accent-dark;
+    text-align: center;
+    margin-bottom: 67px;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    background-color: #fbfbfb;
+    width: 367px;
+    height: 397px;
+    text-align: center;
+    &:hover {
+      border: 1px solid $accent;
+      transition: all 0.7s;
+    }
+  }
+
+  &__item-location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 18px;
+    margin: 70px auto 60px;
+    &:hover {
+      transition: all 0.3s;
+      background-color: $accent;
+      svg {
+        path {
+          fill: #fff;
+        }
+      }
+    }
+  }
+
+  &__item-adress {
+    @extend %dmsans-700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #222222;
+    margin-bottom: 20px;
+  }
+
+  &__item-descr {
+    @extend %rubik-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #565872;
+    max-width: 165px;
+    margin: 0 auto;
+  }
+
+  &__item-descr--mail {
+    max-width: 263px;
+  }
+
+  &__item-descr--phone {
+    max-width: 263px;
+  }
+
+  &__form {
+    max-width: 620px;
+    width: 100%;
+  }
+
+  &__form-inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+
+  &__form-name {
+    width: 300px;
+    height: 50px;
+    background-color: #fafafa;
+    border: none;
+    padding: 10px 20px;
+    @extend %rubik-400;
+    font-size: 16px;
+    line-height: 36px;
+    color: #333333;
+    text-transform: uppercase;
+  }
+  &::placeholder {
+    @extend %rubik-400;
+    font-size: 16px;
+    line-height: 36px;
+    color: #999999;
+  }
+
+  &__form-user {
+    width: 14px;
+    height: 14px;
+    transform: translateX(-37px);
+    margin-top: 18px;
+    z-index: 3;
+  }
+
+  &__form-img {
+    width: 14px;
+    height: 12px;
+    margin-top: 18px;
+    transform: translateX(-23px);
+    z-index: 3;
+  }
+
+  &__form-chat {
+    width: 14px;
+    height: 14px;
+    transform: translate(585px, 30px);
+    z-index: 3;
+  }
+
+  &__form-mail {
+    width: 300px;
+    height: 50px;
+    background-color: #fafafa;
+    border: none;
+    padding: 15px 20px;
+    transform: translateX(16px);
+    &::placeholder {
+      @extend %rubik-400;
+      font-size: 16px;
+      line-height: 36px;
+      color: #999999;
+      text-transform: uppercase;
+    }
+  }
+
+  &__form-btn {
+    width: 192px;
+    height: 50px;
+    background-color: $accent;
+    border: none;
+    @extend %rubik-400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 135px;
+    border-radius: 5px;
+  }
+
+  &__form-textarea {
+    max-width: 620px;
+    width: 100%;
+    min-height: 175px;
+    resize: none;
+    background-color: #fafafa;
+    padding: 15px 20px;
+    margin-bottom: 27px;
+    border: none;
+    &::placeholder {
+      @extend %rubik-400;
+      font-size: 16px;
+      color: #999999;
+      text-transform: uppercase;
+    }
   }
 }
 
